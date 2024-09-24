@@ -8,13 +8,13 @@ function Seguridad(props) {
 
     useEffect(() => {
         verificarSeguridad();
-    }, [props.texto]);
+    });
 
     function validarCaracteres() {
         const lowercase = /[a-z]/;
         const uppercase = /[A-Z]/;
         const numbers = /[0-9]/;
-        const specialChars = /[!@#$%^&*()_+\[\]{}|;:,.<>?]/;
+        const specialChars = /[!@#$%^&*()_+[\]{}|;:,.<>?]/;
         let cantidad = 0;
 
 
